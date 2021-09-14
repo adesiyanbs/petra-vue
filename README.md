@@ -8,7 +8,7 @@ Run the command below in your Terminal to Install the component
 npm i petra-vue
 ```
 
-### Importing the ourpass-checkout-vue-button-v1
+### Importing the petra-vue
 
 Go to your component and import the Component and add it in your component as suggested below
 
