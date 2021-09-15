@@ -1,6 +1,6 @@
 {
   "name": "petra-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/petra-vue.ssr.js",
   "browser": "dist/petra-vue.esm.js",

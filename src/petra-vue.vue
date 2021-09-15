@@ -150,7 +150,7 @@ export default /*#__PURE__*/{
 <template>
   <div>
     <button
-        v-html="`Checkout with Petra <img width='35' src='https://www.thepetra.co/favicon.ico' />`"
+        v-html="`${data.title}`"
         :style="data.button"
         @mouseover="mover()"
         @mouseleave="moout()"

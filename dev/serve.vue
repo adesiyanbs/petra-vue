@@ -11,6 +11,7 @@ export default Vue.extend({
     return {
       data:{
         amount: 100000,
+        title : 'Pay with Petra',
         email: 'emmanueltolu.adebayo@gmail.com',
         key:'pk_test_U4GzNZdtkqC0Oxkdi4FkmH9JLNcE1DKe',
         id:"8a24eb20-5721-4183-987d-aa6bc371ab60",

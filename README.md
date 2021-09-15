@@ -23,7 +23,7 @@ export default {
 }
 ```
 
-### Feeding the component with the write data
+### Feeding the component with the data
 
 You are to feed the component with the checkout data using the data object, and the function you want to run when the checkout is canceled on **onClose** and the function to run when the checkout is completed on **onSuccess**
 
@@ -42,6 +42,7 @@ In **clientInfo** here you have various variables that is needed to complete che
 - Email: Email of your customer
 - Key: Api Key automatically generated for you on Petra 
 - Button: The CSS styling of your button
+- Title : Button Name
 
 ## Example Payload 
 
@@ -51,6 +52,7 @@ In **clientInfo** here you have various variables that is needed to complete che
     return {
         data:{
             amount: 100000,
+            title :"Pay with Petra",
             email: 'test@gmail.com',
             key:'pk_test_U4GzNZdtkqC0Oxkdi4FkmH9JLNcE1DKe',
             button : {
