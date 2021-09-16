@@ -9,7 +9,7 @@ export default /*#__PURE__*/{
       dbutton2: {
         backgroundColor: "#F7A200",
         border: "none",
-        borderRadius: "10px",
+        borderRadius: "8px",
         color: "white",
         textAlign: "center",
         textDecoration: "none",
@@ -22,34 +22,37 @@ export default /*#__PURE__*/{
         transitionDuration: "0.4s",
         cursor: "pointer",
         padding: "10px 32px",
-        opacity: "1"
+        opacity: "1",
       },
       dModalContent :{
         backgroundColor: "#fefefe",
         margin: "auto",
-        padding: "20px",
+        padding: "10px",
         width: "80%",
         height: "80%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        borderRadius:"5px",
       },
       dIframe :{
         display: "none",
         border: "none",
         height: "100%",
         width: "100%",
+        marginTop:"20px",
         zIndex: "99999",
       },
       dModalClose :{
         color: "#aaaaaa",
         position: "absolute",
-        top: "5%",
-        right: "8%",
+        top: "2%",
+        right: "10%",
         float: "right",
         fontSize: "28px",
         fontWeight: "bold",
         cursor: "pointer",
+        zIndex: "100000",
       },
       dModal:{
         display: "none",
@@ -61,6 +64,7 @@ export default /*#__PURE__*/{
         width: "100%",
         height: "100%",
         overflow: "auto",
+        
         // backgroundColor: "rgb(0,0,0)",
         backgroundColor: "rgba(0,0,0,0.4)",
       },
@@ -165,7 +169,7 @@ export default /*#__PURE__*/{
         <div ref="loaderWrapper" id="loaderWrapper" :style="loaderWrapper">
           <img ref="loaderImg" alt="loader" :style="loaderImg" id="loaderImg" src="https://www.thepetra.co/favicon.ico" />
         </div>
-        <span :style="dModalClose" @click="closeModal()">X</span>
+        <span class="close" :style="dModalClose" @click="closeModal()"><img src="../assets/close.svg" alt=""></span>
         <iframe
             ref="dFrame"
             :src="`https://checkout.petra.africa/?amount=${data.amount}&email=${data.email}&key=${data.key}&payType=${data.payType ? data.payType + '&id='+data.id : ''}`"
@@ -191,4 +195,5 @@ export default /*#__PURE__*/{
   .petra-vue p {
     margin: 0 0 1em;
   }
+  
 </style>
