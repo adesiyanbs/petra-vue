@@ -64,7 +64,7 @@ export default /*#__PURE__*/{
         width: "100%",
         height: "100%",
         overflow: "auto",
-        
+        //changes
         // backgroundColor: "rgb(0,0,0)",
         backgroundColor: "rgba(0,0,0,0.4)",
       },
